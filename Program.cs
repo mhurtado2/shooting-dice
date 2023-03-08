@@ -37,6 +37,11 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            HumanPlayer dude = new HumanPlayer();
+            dude.Name = "Shane";
+
+            dude.Play(player2);
+
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large
             };
