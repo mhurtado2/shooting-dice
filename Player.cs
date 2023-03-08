@@ -2,7 +2,7 @@ using System;
 
 namespace ShootingDice
 {
-    public class Player
+    public class Player : SmackTalkingPlayer 
     {
         public string Name { get; set; }
         public int DiceSize { get; set; } = 6;

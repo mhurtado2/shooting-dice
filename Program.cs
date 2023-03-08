@@ -6,15 +6,20 @@ namespace ShootingDice
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             Player player1 = new Player();
             player1.Name = "Bob";
 
-            Player player2 = new Player();
+            // Player player2 = new Player();
+            // player2.Name = "Sue";
+
+            OneHigherPlayer player2 = new OneHigherPlayer();
             player2.Name = "Sue";
 
             player2.Play(player1);
+            player1.Insult();
 
             Console.WriteLine("-------------------");
 

@@ -1,3 +1,5 @@
+using System;
+
 namespace ShootingDice
 {
     // TODO: Complete this class
@@ -6,5 +8,11 @@ namespace ShootingDice
     public class SmackTalkingPlayer
     {
         public string Taunt { get; }
+    
+
+        public virtual void Insult()
+        {
+            Console.WriteLine("That Roll was terrible");
+        }
     }
 }
