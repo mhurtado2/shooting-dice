@@ -13,6 +13,11 @@ namespace ShootingDice
             return new Random().Next(DiceSize) + 1;
         }
 
+        public virtual void GetInsult()
+        {
+            Console.WriteLine("Good Game");
+        }
+
         public virtual void Play(Player other)
         {
             // Call roll for "this" object and for the "other" object
