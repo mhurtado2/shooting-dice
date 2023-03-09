@@ -12,13 +12,13 @@ namespace ShootingDice
             Player player1 = new Player();
             player1.Name = "Bob";
 
-            // Player player2 = new Player();
-            // player2.Name = "Sue";
-
-            OneHigherPlayer player2 = new OneHigherPlayer();
+            Player player2 = new Player();
             player2.Name = "Sue";
 
-            player2.Play(player1);
+            OneHigherPlayer player4 = new OneHigherPlayer();
+            player4.Name = "Sara";
+
+            player4.Play(player1);
             player1.Insult();
 
             Console.WriteLine("-------------------");
@@ -40,11 +40,31 @@ namespace ShootingDice
             HumanPlayer dude = new HumanPlayer();
             dude.Name = "Shane";
             dude.Play(player2);
-            // player3.GetInsult();
+
+            Console.WriteLine("-------------------");
 
             CreativeSmackTalkingPlayer jerk = new CreativeSmackTalkingPlayer();
             jerk.Name = "Chad";
             jerk.GetInsult();
+
+            Console.WriteLine("-------------------");
+
+            SoreLoserPlayer loser = new SoreLoserPlayer();
+            loser.Name = "Kyle";
+            loser.Play(player2);
+
+            Console.WriteLine("-------------------");
+
+            UpperHalfPlayer upper = new UpperHalfPlayer();
+            upper.Name = "Daryl";
+            upper.Play(player1);
+            upper.Play(player1);
+            upper.Play(player1);
+            upper.Play(player1);
+            upper.Play(player1);
+            upper.Play(player1);
+
+            Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large
