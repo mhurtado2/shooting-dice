@@ -19,7 +19,10 @@ namespace ShootingDice
             player4.Name = "Sara";
 
             player4.Play(player1);
-            player1.Insult();
+
+            SmackTalkingPlayer player5 = new SmackTalkingPlayer();
+            player5.Name = "LARRY";
+            player5.GetInsult();
 
             Console.WriteLine("-------------------");
 
@@ -45,7 +48,7 @@ namespace ShootingDice
 
             CreativeSmackTalkingPlayer jerk = new CreativeSmackTalkingPlayer();
             jerk.Name = "Chad";
-            jerk.GetInsult();
+            jerk.Insult();
 
             Console.WriteLine("-------------------");
 
@@ -68,7 +71,7 @@ namespace ShootingDice
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, player4, large, dude, jerk, loser, upper, downer
+                player1, player2, player3, player4, player5, large, dude, jerk, loser, upper, downer
             };
 
             PlayMany(players);

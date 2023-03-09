@@ -19,7 +19,7 @@ namespace ShootingDice
             //create a blank list to add index of insults to
             //relate the int index back to insults to get string value of int index
             //make a loop that loops through 
-            public override void GetInsult()
+            public override void Insult()
             {
                  List<string> Insults = new List<string>(){
                 "You’re my favorite person besides every other person I’ve ever met.", 

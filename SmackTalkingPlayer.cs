@@ -5,12 +5,12 @@ namespace ShootingDice
     // TODO: Complete this class
 
     // A Player who shouts a taunt every time they roll dice
-    public class SmackTalkingPlayer
+    public class SmackTalkingPlayer : Player
     {
         public string Taunt { get; }
     
 
-        public virtual void Insult()
+        public override void GetInsult()
         {
             Console.WriteLine("That Roll was terrible");
         }

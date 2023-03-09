@@ -2,7 +2,7 @@ using System;
 
 namespace ShootingDice
 {
-    public class Player : SmackTalkingPlayer 
+    public class Player 
     {
         public string Name { get; set; }
         public int DiceSize { get; set; } = 6;
@@ -11,6 +11,11 @@ namespace ShootingDice
         {
             // Return a random number between 1 and DiceSize
             return new Random().Next(DiceSize) + 1;
+        }
+
+        public virtual void Insult()
+        {
+            // Console.WriteLine("Good Game");
         }
 
         public virtual void GetInsult()
