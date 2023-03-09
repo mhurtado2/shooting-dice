@@ -58,16 +58,17 @@ namespace ShootingDice
             UpperHalfPlayer upper = new UpperHalfPlayer();
             upper.Name = "Daryl";
             upper.Play(player1);
-            upper.Play(player1);
-            upper.Play(player1);
-            upper.Play(player1);
-            upper.Play(player1);
-            upper.Play(player1);
+          
+            Console.WriteLine("-------------------");
+
+            SoreLoserUpperHalfPlayer downer = new SoreLoserUpperHalfPlayer();
+            downer.Name = "Randy";
+            downer.Play(player2);
 
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large
+                player1, player2, player3, player4, large, dude, jerk, loser, upper, downer
             };
 
             PlayMany(players);
